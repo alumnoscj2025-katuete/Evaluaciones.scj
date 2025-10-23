@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Examen - Formación Ética y Ciudadanía</title>
+<title>Examen - Castellano 9º Grado</title>
 <style>
-  body { font-family: Arial, sans-serif; margin: 10px; background: #eef3fb; }
-  h1 { color: #003366; text-align: center; }
+  body { font-family: Arial, sans-serif; margin: 10px; background: #f5f5f5; }
+  h1 { color: #333; text-align: center; }
   .card { background: white; border-radius: 12px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); }
   label { display: block; margin: 6px 0; }
   select, input[type=text] { width: 100%; padding: 10px; margin-top: 4px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px; }
   button { padding: 12px 20px; margin-top: 10px; font-size: 16px; border-radius: 8px; border: none; cursor: pointer; }
-  #btnEnviar { background-color: #0066cc; color: white; }
-  #btnPDF { background-color: #009933; color: white; display: none; }
+  #btnEnviar { background-color: #2196F3; color: white; }
+  #btnPDF { background-color: #4CAF50; color: white; display: none; }
   .pregunta { margin-bottom: 15px; }
   .opcion { margin-left: 20px; }
   @media(max-width:600px){ select,input[type=text],button{font-size:16px;} }
@@ -20,7 +20,7 @@
 </head>
 <body>
 
-<h1>📘 Examen - Formación Ética y Ciudadanía</h1>
+<h1>📘 Examen de Castellano - 8º Grado</h1>
 
 <div class="card">
   <label for="selTurno">Turno:</label>
@@ -52,69 +52,79 @@ const divPreg  = document.getElementById("preguntas");
 const btnEnviar= document.getElementById("btnEnviar");
 const btnPDF   = document.getElementById("btnPDF");
 
-// ====================== EXAMEN ======================
+// 🔹 EXAMEN ACTUALIZADO 🔹
 const examenData = [
   {
     tipo: "multiple",
-    pregunta: "1️⃣ Son los pactos o convenios establecidos entre las partes interesadas en llegar a un objetivo común.",
-    opciones: ["Convivencia", "Normas", "Acuerdos institucionales", "Leyes"],
-    correcta: "Acuerdos institucionales"
+    pregunta: "En la oración: “Los niños corren por el patio”, la palabra 'corren' expresa una acción.",
+    opciones: ["Sustantivo", "Verbo", "Adjetivo"],
+    correcta: "Verbo"
   },
   {
     tipo: "multiple",
-    pregunta: "2️⃣ Estado en el cual un grupo de diferentes personas se tratan entre sí en términos de imparcialidad.",
-    opciones: ["Convivencia", "Acuerdos institucionales", "Normas", "Acuerdos de aula"],
-    correcta: "Convivencia"
+    pregunta: "Lee: “Ojalá que mañana no llueva para jugar al fútbol.” El modo verbal utilizado para expresar un deseo es:",
+    opciones: ["Indicativo", "Subjuntivo", "Imperativo"],
+    correcta: "Subjuntivo"
   },
   {
     tipo: "multiple",
-    pregunta: "3️⃣ Ayuda a prevenir los problemas entre las autoridades y miembros de la comunidad educativa.",
-    opciones: ["Situación–problema", "Situación–evento", "Acuerdos institucionales", "Acuerdos de aula"],
-    correcta: "Acuerdos institucionales"
+    pregunta: "En el verso: “Tu sonrisa brilla como el sol en la mañana”, se utiliza una figura literaria que compara dos elementos.",
+    opciones: ["Metáfora", "Hipérbole", "Símil"],
+    correcta: "Símil"
   },
   {
     tipo: "multiple",
-    pregunta: "4️⃣ Acciones u omisiones agresivas entre los miembros de la comunidad educativa, siempre que ocurran en recintos educativos.",
-    opciones: ["Situación–problema", "Violencia escolar", "Agresividad", "Bullying"],
-    correcta: "Violencia escolar"
+    pregunta: "En la frase: “El viento cantaba entre los árboles”, se atribuyen cualidades humanas a algo que no lo es.",
+    opciones: ["Metáfora", "Personificación", "Repetición"],
+    correcta: "Personificación"
   },
   {
     tipo: "multiple",
-    pregunta: "5️⃣ Predisposición a actuar o manifestarse violentamente, ocasionados por diferentes factores.",
-    opciones: ["Violencia", "Violencia escolar", "Agresividad", "Violencia física"],
-    correcta: "Agresividad"
+    pregunta: "En el poema se repite varias veces la palabra “paz” para dar fuerza al mensaje: “Paz en la tierra, paz en el alma, paz en el mundo.” ¿Qué recurso literario se emplea?",
+    opciones: ["Repetición", "Metáfora", "Hipérbole"],
+    correcta: "Repetición"
   },
   {
     tipo: "multiple",
-    pregunta: "6️⃣ Problemas familiares, personales o académicos son:",
-    opciones: ["Características de la violencia escolar", "Causas de la violencia escolar", "Consecuencias de la violencia escolar", "Tipos de violencia escolar"],
-    correcta: "Causas de la violencia escolar"
+    pregunta: "Observa: “Tenía tanta hambre que podría comerme un caballo.” ¿Qué figura literaria aparece?",
+    opciones: ["Hipérbole", "Símil", "Metáfora"],
+    correcta: "Hipérbole"
   },
   {
     tipo: "multiple",
-    pregunta: "7️⃣ Es el núcleo de toda sociedad, el primer entorno en que el niño socializa.",
-    opciones: ["La familia", "La escuela", "La iglesia", "La sociedad"],
-    correcta: "La familia"
+    pregunta: "En la descripción: “El perfume de las flores llenaba el aire con dulzura.”, la imagen sensorial predominante es:",
+    opciones: ["Olfativa", "Visual", "Auditiva"],
+    correcta: "Olfativa"
   },
   {
     tipo: "multiple",
-    pregunta: "8️⃣ Niños maltratados que se convierten en maltratadores lo hacen por un proceso de:",
-    opciones: ["Competencia", "Imitación", "Agresión", "Provocación"],
-    correcta: "Imitación"
+    pregunta: "En el enunciado: “Todos aprobaron el examen”, el antónimo contextual de la palabra 'Todos' es:",
+    opciones: ["Algunos", "Nadie", "Muchos"],
+    correcta: "Nadie"
+  },
+  {
+    tipo: "multiple",
+    pregunta: "En la oración: “El jarrón quedó destrozado después de la caída”, el sinónimo contextual de 'destrozado' es:",
+    opciones: ["Roto", "Sucio", "Viejo"],
+    correcta: "Roto"
+  },
+  {
+    tipo: "multiple",
+    pregunta: "En la oración: “María escribirá una carta a su abuela.”, el verbo está conjugado en:",
+    opciones: ["Presente", "Futuro", "Pasado"],
+    correcta: "Futuro"
   }
 ];
 
-// ====================== INICIO ======================
 window.onload = () => {
   cargarConfig();
   selTurno.onchange = cargarEstudiantes;
   selGrado.onchange = cargarEstudiantes;
   selMat.onchange   = mostrarPreguntas;
-  btnEnviar.onclick = verificarIntentos;
+  btnEnviar.onclick = enviar;
   btnPDF.onclick    = generarPDF;
 };
 
-// ====================== CONFIGURACIÓN ======================
 async function cargarConfig(){
   try {
     const res = await fetch(`${URL_SCRIPT}?action=config`);
@@ -134,7 +144,6 @@ function llenarSelect(select,arr){
   arr.forEach(v=>select.appendChild(new Option(v,v)));
 }
 
-// ====================== CARGAR ESTUDIANTES ======================
 async function cargarEstudiantes(){
   const g=selGrado.value, t=selTurno.value;
   if(!g||!t) return;
@@ -149,11 +158,10 @@ async function cargarEstudiantes(){
   }
 }
 
-// ====================== MOSTRAR PREGUNTAS ======================
 function mostrarPreguntas(){
   divPreg.innerHTML="";
   examenData.forEach((q,i)=>{
-    let html=`<div class="card pregunta"><p><b>${q.pregunta}</b></p>`;
+    let html=`<div class="card pregunta"><p><b>${i+1}. ${q.pregunta}</b></p>`;
     if(q.tipo==="multiple"){
       q.opciones.forEach(opt=>{
         html+=`<label class="opcion"><input type="radio" name="p${i}" value="${opt}"> ${opt}</label>`;
@@ -162,53 +170,30 @@ function mostrarPreguntas(){
       html+=`<label class="opcion"><input type="radio" name="p${i}" value="Verdadero"> Verdadero</label>`;
       html+=`<label class="opcion"><input type="radio" name="p${i}" value="Falso"> Falso</label>`;
     } else if(q.tipo==="texto"){
-      html+=`<input type="text" name="p${i}" placeholder="Escribe tu respuesta aquí...">`;
+      html+=`<input type="text" name="p${i}">`;
     }
     html+="</div>";
     divPreg.insertAdjacentHTML("beforeend",html);
   });
 }
 
-// ====================== CONTROL DE INTENTOS ======================
-async function verificarIntentos(){
-  const est=selEst.value, g=selGrado.value, t=selTurno.value, mat=selMat.value;
-  if(!est||!g||!t||!mat) return alert("⚠️ Completá todos los campos antes de continuar.");
-
-  try{
-    const res = await fetch(`${URL_SCRIPT}?action=intentos&estudiante=${encodeURIComponent(est)}&materia=${encodeURIComponent(mat)}`);
-    const data = await res.json();
-    if(data.intentos >= 2){
-      alert("🚫 Ya realizaste los 2 intentos permitidos para este examen.");
-      return;
-    }
-    enviarExamen(data.intentos + 1);
-  }catch(err){
-    alert("⚠️ Error verificando intentos: "+err.message);
-  }
-}
-
-// ====================== ENVÍO DE RESPUESTAS ======================
-async function enviarExamen(intentos){
+async function enviar(){
   const est=selEst.value, mat=selMat.value, g=selGrado.value, t=selTurno.value;
+  if(!est||!mat) return alert("⚠️ Completá todos los campos");
+
   const preguntas=examenData.map(q=>q.pregunta);
   const correctas=examenData.map(q=>q.correcta);
   const respuestas=examenData.map((_,i)=>{
     const sel=document.querySelector(`input[name='p${i}']:checked`);
     if(sel) return sel.value;
     const txt=document.querySelector(`input[name='p${i}']`);
-    return txt? txt.value.trim() : "";
+    return txt? txt.value : "";
   });
 
   let nota=0;
-  respuestas.forEach((r,i)=>{
-    if((r||"").toLowerCase().includes((correctas[i]||"").toLowerCase())) nota++;
-  });
+  respuestas.forEach((r,i)=>{ if((r||"").trim().toLowerCase() === (correctas[i]||"").trim().toLowerCase()) nota++; });
 
-  const payload={
-    estudiante:est,grado:g,turno:t,materia:mat,
-    preguntas,respuestas,correctas,nota,intentos,
-    fecha:new Date().toLocaleString()
-  };
+  const payload={estudiante:est,grado:g,turno:t,materia:mat,preguntas,respuestas,correctas,nota};
 
   try{
     const res = await fetch(URL_SCRIPT,{
@@ -218,17 +203,17 @@ async function enviarExamen(intentos){
     });
     const ok = await res.json();
     if(ok.status==="ok"){
-      alert(`✅ Envío exitoso.\nIntento Nº ${intentos}\nPuntaje: ${nota}/${correctas.length}`);
+      alert(`✅ Nota: ${nota}/${correctas.length}`);
       btnPDF.style.display="inline-block";
     } else {
-      alert("❌ Error al guardar en Sheets.");
+      alert("❌ Error al guardar respuestas en Sheets");
     }
   }catch(err){
-    alert("❌ Error guardando respuestas: "+err.message);
+    alert("❌ Error guardando respuestas. Revisá la consola.");
+    console.error(err);
   }
 }
 
-// ====================== GENERAR PDF ======================
 function generarPDF(){
   const contenido=divPreg.innerHTML;
   const win=window.open('','','width=800,height=600');

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Examen - Castellano 9º Grado</title>
+<title>Examen - Salud 8º Grado</title>
 <style>
   body { font-family: Arial, sans-serif; margin: 10px; background: #f5f5f5; }
   h1 { color: #333; text-align: center; }
@@ -20,7 +20,7 @@
 </head>
 <body>
 
-<h1>📘 Examen de Castellano - 8º Grado</h1>
+<h1>📘 Examen de Salud - 8º Grado</h1>
 
 <div class="card">
   <label for="selTurno">Turno:</label>
@@ -52,68 +52,18 @@ const divPreg  = document.getElementById("preguntas");
 const btnEnviar= document.getElementById("btnEnviar");
 const btnPDF   = document.getElementById("btnPDF");
 
-// 🔹 EXAMEN ACTUALIZADO 🔹
+// 🔹 EXAMEN DE SALUD - 8º GRADO 🔹
 const examenData = [
-  {
-    tipo: "multiple",
-    pregunta: "En la oración: “Los niños corren por el patio”, la palabra 'corren' expresa una acción.",
-    opciones: ["Sustantivo", "Verbo", "Adjetivo"],
-    correcta: "Verbo"
-  },
-  {
-    tipo: "multiple",
-    pregunta: "Lee: “Ojalá que mañana no llueva para jugar al fútbol.” El modo verbal utilizado para expresar un deseo es:",
-    opciones: ["Indicativo", "Subjuntivo", "Imperativo"],
-    correcta: "Subjuntivo"
-  },
-  {
-    tipo: "multiple",
-    pregunta: "En el verso: “Tu sonrisa brilla como el sol en la mañana”, se utiliza una figura literaria que compara dos elementos.",
-    opciones: ["Metáfora", "Hipérbole", "Símil"],
-    correcta: "Símil"
-  },
-  {
-    tipo: "multiple",
-    pregunta: "En la frase: “El viento cantaba entre los árboles”, se atribuyen cualidades humanas a algo que no lo es.",
-    opciones: ["Metáfora", "Personificación", "Repetición"],
-    correcta: "Personificación"
-  },
-  {
-    tipo: "multiple",
-    pregunta: "En el poema se repite varias veces la palabra “paz” para dar fuerza al mensaje: “Paz en la tierra, paz en el alma, paz en el mundo.” ¿Qué recurso literario se emplea?",
-    opciones: ["Repetición", "Metáfora", "Hipérbole"],
-    correcta: "Repetición"
-  },
-  {
-    tipo: "multiple",
-    pregunta: "Observa: “Tenía tanta hambre que podría comerme un caballo.” ¿Qué figura literaria aparece?",
-    opciones: ["Hipérbole", "Símil", "Metáfora"],
-    correcta: "Hipérbole"
-  },
-  {
-    tipo: "multiple",
-    pregunta: "En la descripción: “El perfume de las flores llenaba el aire con dulzura.”, la imagen sensorial predominante es:",
-    opciones: ["Olfativa", "Visual", "Auditiva"],
-    correcta: "Olfativa"
-  },
-  {
-    tipo: "multiple",
-    pregunta: "En el enunciado: “Todos aprobaron el examen”, el antónimo contextual de la palabra 'Todos' es:",
-    opciones: ["Algunos", "Nadie", "Muchos"],
-    correcta: "Nadie"
-  },
-  {
-    tipo: "multiple",
-    pregunta: "En la oración: “El jarrón quedó destrozado después de la caída”, el sinónimo contextual de 'destrozado' es:",
-    opciones: ["Roto", "Sucio", "Viejo"],
-    correcta: "Roto"
-  },
-  {
-    tipo: "multiple",
-    pregunta: "En la oración: “María escribirá una carta a su abuela.”, el verbo está conjugado en:",
-    opciones: ["Presente", "Futuro", "Pasado"],
-    correcta: "Futuro"
-  }
+  { pregunta: "¿Cuáles son los signos y síntomas más frecuentes de la diabetes?", tipo: "multiple", opciones: ["Sed constante y orina frecuente", "Falta de apetito", "Aumento de peso"], correcta: "Sed constante y orina frecuente" },
+  { pregunta: "¿Qué tipo de alimentos se recomienda para una persona con diabetes?", tipo: "multiple", opciones: ["Azúcar, miel y dulces", "Alimentos ricos en fibra, frutas y verduras frescas", "Bocaditos fritos y comidas rápidas"], correcta: "Alimentos ricos en fibra, frutas y verduras frescas" },
+  { pregunta: "¿Cuál es uno de los principales factores que causa obesidad y sobrepeso?", tipo: "multiple", opciones: ["Consumo excesivo de alimentos hipercalóricos", "Comer pocas veces al día", "Comer muchas frutas y verduras"], correcta: "Consumo excesivo de alimentos hipercalóricos" },
+  { pregunta: "¿Cuál es el tratamiento adecuado para controlar la diabetes?", tipo: "multiple", opciones: ["Consumir alimentos grasos", "Evitar toda actividad física", "Mantener un equilibrio adecuado de insulina y alimentación saludable"], correcta: "Mantener un equilibrio adecuado de insulina y alimentación saludable" },
+  { pregunta: "¿Cuáles son los tipos principales de desnutrición?", tipo: "multiple", opciones: ["Kwashiorkor y marasmo", "Temor a engordar", "Hinchazón abdominal por gases"], correcta: "Kwashiorkor y marasmo" },
+  { pregunta: "¿Cómo debe alimentarse una mujer embarazada?", tipo: "multiple", opciones: ["Comer una sola vez al día", "Consumir cualquier tipo de alimento sin control", "Mantener una dieta rica en calcio, hierro y proteínas"], correcta: "Mantener una dieta rica en calcio, hierro y proteínas" },
+  { pregunta: "¿Qué cuidados son necesarios durante el embarazo?", tipo: "multiple", opciones: ["Realizar ejercicios suaves y asistir a controles médicos", "Alimentarse en exceso", "Evitar visitar al médico"], correcta: "Realizar ejercicios suaves y asistir a controles médicos" },
+  { pregunta: "¿Cómo debe alimentarse un recién nacido?", tipo: "multiple", opciones: ["Con leche en polvo", "Con leche de vaca", "Exclusivamente con leche materna"], correcta: "Exclusivamente con leche materna" },
+  { pregunta: "¿Cuál es un síntoma frecuente de la bulimia?", tipo: "multiple", opciones: ["Comer de manera exagerada y luego provocar el vómito", "Realizar ejercicios físicos moderados", "Comer muchas frutas"], correcta: "Comer de manera exagerada y luego provocar el vómito" },
+  { pregunta: "¿Cuánto dura normalmente el embarazo en una mujer?", tipo: "multiple", opciones: ["9 meses", "8 meses", "10 meses"], correcta: "9 meses" }
 ];
 
 window.onload = () => {

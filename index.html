@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Examen - GUARANÍ 8º Grado</title>
+<title>Examen - Castellano 8º Grado</title>
 <style>
   body { font-family: Arial, sans-serif; margin: 10px; background: #f5f5f5; }
   h1 { color: #333; text-align: center; }
@@ -20,8 +20,24 @@
 </head>
 <body>
 
-<h1>📘 Examen de GUARANÍ - 8º Grado</h1>
+<h1>📘 Examen de Castellano – 8º Grado</h1>
 
+<!-- BLOQUE DEL TEXTO - NUEVO -->
+<div class="card" style="background:#fffbea;">
+  <h2 style="margin-top:0;">📖 Lectura: <i>El Castigo</i> — Mario Halley Mora</h2>
+  <p>
+    El Castigo; de Mario Halley Mora, paraguayo. <br><br>
+    Un hombre raro de mi pueblo recuerda que cuando él era niño, cazaba pajaritos con un rifle de aire comprimido. 
+    Éste observaba la carne muy leve de los canarios y gorriones que se desgarraba al impacto de las municiones. 
+    Plumajes azules, verdes, amarillos, rojos, se manchaban con el púrpura de la sangre. <br><br>
+    El hombre creció y se hizo hombre y ya no mataba más pajarillos, sino jabalíes, capibaras bonachones, tigres feroces, 
+    venados ágiles que aún en la muerte tenían en los ojos el pánico y la angustia. Llegó a viejo y murió el hombre como cualquier mortal. <br><br>
+    En el Infierno inventaron un castigo nuevo para él: pasear por un bosque encantado, iluminado con música de trinos y sonidos de la selva, 
+    además, lleno de piezas de caza: resorteras, trampas, rifles, jaulas, etc. Y él iba sin arma y tembloroso como aquellos animales.
+  </p>
+</div>
+
+<!-- CONFIGURACIÓN -->
 <div class="card">
   <label for="selTurno">Turno:</label>
   <select id="selTurno"><option value="">-- Turno --</option></select>
@@ -52,19 +68,117 @@ const divPreg  = document.getElementById("preguntas");
 const btnEnviar= document.getElementById("btnEnviar");
 const btnPDF   = document.getElementById("btnPDF");
 
-// 🔹 EXAMEN DE GUARANÍ - 8º GRADO 🔹
+
+// ==============================
+//   EXAMEN COMPLETO
+// ==============================
 const examenData = [
-  { pregunta: "Mba’eichagua jehaipyrépa kóva (¿Qué clase de texto es?)", tipo: "multiple", opciones: ["Ñe’ẽpoty", "Mombe’urã", "Mombe’upy"], correcta: "Mombe’upy" },
-  { pregunta: "Ja’e mba’épa oiko (Identificamos hecho)", tipo: "multiple", opciones: ["Akói iñakãhatã", "Ohoje hina yreka Tupãsy", "Ynambu ituruñe’ẽ"], correcta: "Ohoje hina yreka Tupãsy" },
-  { pregunta: "Jahechakuaa mbotuicháva (Identificamos hipérbole)", tipo: "multiple", opciones: ["Kuarahy ojekávo ijapére", "Tupãsy henda ári", "Ynambu okýrô"], correcta: "Kuarahy ojekávo ijapére" },
-  { pregunta: "Jahechakuaa peteĩ mbojojava (Identificamos comparación)", tipo: "multiple", opciones: ["Ynambu ituruñe’ẽ", "Omboguarara ama", "Ombokuasévaicha arai"], correcta: "Ombokuasévaicha arai" },
-  { pregunta: "Jahechauka oikóva (Verdadero)", tipo: "multiple", opciones: ["Sapy’ante hyapu Jesús", "Ynambu okýrõmante hoy’úva", "Omboguarara ama hina"], correcta: "Ynambu okýrõmante hoy’úva" },
-  { pregunta: "Jahechauka temiandu rehe (Los sentidos) — Tupãsy henda ári:", tipo: "multiple", opciones: ["Jahecháva", "Ñahendúva", "Ñahetũva"], correcta: "Jahecháva" },
-  { pregunta: "Jahechaka oikoháicha mombe’upýpe (Secuencia): Kuarahy ojekávo ijapére – Ohoje hina yreka Tupãsy – Oñekõ’õi Tupãsy", tipo: "multiple", opciones: ["3-1-2", "1-2-3", "2-1-3"], correcta: "2-1-3" },
-  { pregunta: "Jahechuka ko’ã ñe’ẽgui tero (Identificamos el sustantivo)", tipo: "multiple", opciones: ["Ama", "Tupãsy", "Mbyryai"], correcta: "Tupãsy" },
-  { pregunta: "Mba’e oiko mombe’upýpe (¿Qué sucede en el relato?)", tipo: "multiple", opciones: ["Tupã oho yreka omondyi chupe ynambu", "Ynambu oveve oho", "Tupãsy ovendesi ynambupe"], correcta: "Tupã oho yreka omondyi chupe ynambu" },
-  { pregunta: "Mba’éicha hera ko moñe’ẽra (¿Cómo se llama esta lectura?)", tipo: "multiple", opciones: ["Yapakaa", "Yambu", "Ynambu"], correcta: "Ynambu" }
+{
+  pregunta: "1. Las palabras que tienen su sinónimo correcto:",
+  tipo: "multiple",
+  opciones: [
+    "a. rifle (arma)",
+    "b. rifle (afligido)",
+    "c. rifle (municiones)"
+  ],
+  correcta: "a. rifle (arma)"
+},
+{
+  pregunta: "2. El personaje principal es:",
+  tipo: "multiple",
+  opciones: [
+    "a. Mario Halley Mora",
+    "b. El hombre raro",
+    "c. Desconocido"
+  ],
+  correcta: "b. El hombre raro"
+},
+{
+  pregunta: "3. El emisor del texto es:",
+  tipo: "multiple",
+  opciones: [
+    "a. Mario Halley Mora",
+    "b. El que lee",
+    "c. El hombre raro"
+  ],
+  correcta: "a. Mario Halley Mora"
+},
+{
+  pregunta: "4. El género literario del texto leído:",
+  tipo: "multiple",
+  opciones: [
+    "a. Narrativo",
+    "b. Periodístico",
+    "c. Poético"
+  ],
+  correcta: "a. Narrativo"
+},
+{
+  pregunta: "5. El castigo al hombre raro es justo porque:",
+  tipo: "multiple",
+  opciones: [
+    "a. Actuó mal",
+    "b. Se divierte",
+    "c. Actuó bien"
+  ],
+  correcta: "a. Actuó mal"
+},
+{
+  pregunta: "6. ¿Cómo es la relación con la Naturaleza del hombre raro?",
+  tipo: "multiple",
+  opciones: [
+    "a. Consciente",
+    "b. Inconsciente",
+    "c. Buena"
+  ],
+  correcta: "b. Inconsciente"
+},
+{
+  pregunta: "7. Según el texto, podemos deducir que:",
+  tipo: "multiple",
+  opciones: [
+    "a. Cada quien recibe al final de su vida su merecido",
+    "b. La vida es injusta",
+    "c. Nadie recibe lo que merece"
+  ],
+  correcta: "a. Cada quien recibe al final de su vida su merecido"
+},
+{
+  pregunta: "8. El mensaje del escritor sobre la naturaleza es:",
+  tipo: "multiple",
+  opciones: [
+    "a. No es bueno matar por matar a los animales",
+    "b. Nunca se debe matar a los animales",
+    "c. Es divertida la matanza de los animales"
+  ],
+  correcta: "a. No es bueno matar por matar a los animales"
+},
+{
+  pregunta: "9. El texto está organizado en:",
+  tipo: "multiple",
+  opciones: [
+    "a. Estrofas",
+    "b. Párrafos",
+    "c. Ninguno es correcto"
+  ],
+  correcta: "b. Párrafos"
+},
+{
+  pregunta: "10. “Y él iba sin arma y tembloroso como aquellos animales” es una expresión llamada:",
+  tipo: "multiple",
+  opciones: [
+    "a. Metáfora",
+    "b. Personificación",
+    "c. Comparación"
+  ],
+  correcta: "c. Comparación"
+}
 ];
+
+
+// ==============================
+//   FUNCIONAMIENTO DEL SISTEMA
+// ==============================
 
 window.onload = () => {
   cargarConfig();
@@ -111,16 +225,11 @@ async function cargarEstudiantes(){
 function mostrarPreguntas(){
   divPreg.innerHTML="";
   examenData.forEach((q,i)=>{
-    let html=`<div class="card pregunta"><p><b>${i+1}. ${q.pregunta}</b></p>`;
+    let html=`<div class="card pregunta"><p><b>${q.pregunta}</b></p>`;
     if(q.tipo==="multiple"){
       q.opciones.forEach(opt=>{
         html+=`<label class="opcion"><input type="radio" name="p${i}" value="${opt}"> ${opt}</label>`;
       });
-    } else if(q.tipo==="vf"){
-      html+=`<label class="opcion"><input type="radio" name="p${i}" value="Verdadero"> Verdadero</label>`;
-      html+=`<label class="opcion"><input type="radio" name="p${i}" value="Falso"> Falso</label>`;
-    } else if(q.tipo==="texto"){
-      html+=`<input type="text" name="p${i}">`;
     }
     html+="</div>";
     divPreg.insertAdjacentHTML("beforeend",html);
@@ -135,13 +244,13 @@ async function enviar(){
   const correctas=examenData.map(q=>q.correcta);
   const respuestas=examenData.map((_,i)=>{
     const sel=document.querySelector(`input[name='p${i}']:checked`);
-    if(sel) return sel.value;
-    const txt=document.querySelector(`input[name='p${i}']`);
-    return txt? txt.value : "";
+    return sel? sel.value : "";
   });
 
   let nota=0;
-  respuestas.forEach((r,i)=>{ if((r||"").trim().toLowerCase() === (correctas[i]||"").trim().toLowerCase()) nota++; });
+  respuestas.forEach((r,i)=>{ 
+    if((r||"").trim().toLowerCase() === (correctas[i]||"").trim().toLowerCase()) nota++; 
+  });
 
   const payload={estudiante:est,grado:g,turno:t,materia:mat,preguntas,respuestas,correctas,nota};
 
@@ -159,7 +268,7 @@ async function enviar(){
       alert("❌ Error al guardar respuestas en Sheets");
     }
   }catch(err){
-    alert("❌ Error guardando respuestas. Revisá la consola.");
+    alert("❌ Error guardando respuestas.");
     console.error(err);
   }
 }
@@ -178,4 +287,3 @@ function generarPDF(){
 </script>
 </body>
 </html>
-html>
